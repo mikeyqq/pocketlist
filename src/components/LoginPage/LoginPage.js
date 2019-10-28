@@ -5,8 +5,12 @@ import googleButtonImg from "../../assets/images/btn_google_signin_light_normal_
 import "./LoginPage.scss";
 
 const LoginPage = ({ startLogin }) => (
-  <div className="login-container">
-    <img src={googleButtonImg} alt="googleimage" onClick={startLogin} className="googleButton" />
+  <div className="box-layout">
+    <div className="box-layout__box">
+      <h1 className="box-layout__title">Pocket List</h1>
+      <p className="box-layout__p">An easy list at anytime, anywhere.</p>
+      <img src={googleButtonImg} alt="googleimage" onClick={startLogin} className="googleButton" />
+    </div>
   </div>
 );
 

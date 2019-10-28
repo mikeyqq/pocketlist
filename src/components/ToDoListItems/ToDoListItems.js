@@ -29,7 +29,7 @@ const ToDoListItems = ({ id, title, description, createdAt, dispatch }) => {
           <h3 className="to-do-list-item-title">{title}</h3>
         </Link>
         <div className="to-do-list-item-description">{description}</div>
-        <p>Due: {moment(createdAt).format("YYYY-MM-D")}</p>
+        <p>{moment(createdAt).format("YYYY-MM-D")}</p>
       </div>
       <div className="to-do-list-item-button">
         <button

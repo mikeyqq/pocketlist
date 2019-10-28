@@ -1,23 +1,79 @@
 .googleButton {
-  margin-top: 20vh;
+  margin-top: 5vh;
   width: 200px;
   height: 50px;
 
   @media (min-width: "1024px") {
     width: 290px;
     height: 80px;
-    margin-top: 20vh;
   }
 
   @media (min-width: "1440px") {
-    margin-top: 20vh;
     width: 350px;
     height: 90px;
   }
 
   @media (min-width: "2560px") {
-    margin-top: 30vh;
-    width: 750px;
+    width: 600px;
     height: 170px;
+  }
+}
+
+.box-layout {
+  align-items: center;
+  background: url("../../assets/images/bg.jpg");
+  background-size: cover;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.box-layout__box {
+  background: fade-out(White, 0.2);
+  border-radius: 3px;
+  padding: 10px;
+  text-align: center;
+  width: 25rem;
+  @media (min-width: "1024px") {
+    padding: 15px;
+    width: 30rem;
+  }
+
+  @media (min-width: "1440px") {
+    width: 40rem;
+    padding: 25px;
+  }
+
+  @media (min-width: "2560px") {
+    width: 65rem;
+    padding: 40px;
+  }
+}
+
+.box-layout__title {
+  font-size: 5em;
+  @media (min-width: "1024px") {
+    font-size: 7em;
+  }
+
+  @media (min-width: "1440px") {
+    font-size: 8.5em;
+  }
+
+  @media (min-width: "2560px") {
+    font-size: 11em;
+  }
+}
+
+.box-layout__p {
+  font-size: 1em;
+
+  @media (min-width: "1024px") {
+    font-size: 1.5em;
+  }
+
+  @media (min-width: "2560px") {
+    font-size: 2.5em;
   }
 }

@@ -8,7 +8,6 @@ import EditToDoPage from "../components/EditToDoPage/EditToDoPage";
 import LoginPage from "../components/LoginPage/LoginPage";
 import PrivateRoute from "./PrivateRoute";
 import PublicRoute from "./PublicRoute";
-import "./AppRouter.scss";
 
 export const history = createHistory();
 
@@ -16,7 +15,6 @@ const AppRouter = () => {
   return (
     <Router history={history}>
       <div>
-        <h1 className="title">Pocket List</h1>
         <Switch>
           <PublicRoute path="/" component={LoginPage} exact={true} />
           <PrivateRoute path="/dashboard" component={ToDoDashboardPage} exact={true} />

@@ -5,20 +5,18 @@
   border: lightgray 0.5px solid;
   justify-content: baseline;
   background-color: white;
+  border: grey solid 1px;
 
   @media (min-width: "1024px") {
     margin-bottom: 5px;
-    border: black solid 2px;
   }
 
   @media (min-width: "1440px") {
     margin-bottom: 5px;
-    border: black solid 2px;
   }
 
   @media (min-width: "2560px") {
     margin-bottom: 5px;
-    border: black solid 2px;
   }
 }
 
@@ -43,7 +41,6 @@
   height: 5vh;
   overflow: auto;
   margin-bottom: 0px;
-  border: 0.5px grey solid;
   font-size: 1em;
 }
 
