@@ -106,15 +106,15 @@ export default class ToDoListForm extends React.Component {
             value={this.state.level}
             onChange={this.onLevelChange}
           />
-
-          <SingleDatePicker
-            date={this.state.createdAt}
-            onDateChange={this.onDateChange}
-            focused={this.state.calendarFocused}
-            onFocusChange={this.onFocusChange}
-            numberOfMonths={1}
-          />
-
+          <div>
+            <SingleDatePicker
+              date={this.state.createdAt}
+              onDateChange={this.onDateChange}
+              focused={this.state.calendarFocused}
+              onFocusChange={this.onFocusChange}
+              numberOfMonths={1}
+            />
+          </div>
           <button className="form-button">Submit Item</button>
         </form>
       </div>
