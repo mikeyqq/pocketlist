@@ -14,8 +14,6 @@ const ToDoList = props => {
   );
 };
 
-//this function has the redux store state that can be passed as props to the ToDoList components.
-//this is becaue of using connect()
 const mapStateToProps = state => {
   console.log("what is the state here?", state.toDos);
   return {

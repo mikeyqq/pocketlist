@@ -113,7 +113,6 @@ export default class ToDoListForm extends React.Component {
             focused={this.state.calendarFocused}
             onFocusChange={this.onFocusChange}
             numberOfMonths={1}
-            //isOutsideRange={() => false} -> if we want to access to the dates in the past
           />
 
           <button className="form-button">Submit Item</button>
