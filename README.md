@@ -6,7 +6,6 @@ Pocketlist is an application that allows you to add, edit, and delete tasks. The
 
 - [General Info](#general-info)
 - [Technologies](#technologies)
-- [Final Product](#final-product)
 - [Setup](#setup)
 
 ## General Info
