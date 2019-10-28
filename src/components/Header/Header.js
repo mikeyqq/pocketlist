@@ -15,7 +15,7 @@ const Header = ({ startLogout }) => (
           <h1>Create Item</h1>
         </Link>
         <button onClick={startLogout} className="header-logout-button">
-          <p>Logout</p>
+          Logout
         </button>
       </div>
     </div>
