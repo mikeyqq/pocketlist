@@ -7,7 +7,6 @@ const CreateToDoPage = props => (
   <div>
     <ToDoForm
       onSubmit={toDoItem => {
-        console.log("what is this todolistitem in createtodolistpage", toDoItem);
         props.dispatch(startCreateToDoItem(toDoItem));
         props.history.push("/");
       }}

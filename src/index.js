@@ -34,12 +34,6 @@ const renderApp = () => {
   }
 };
 
-//store.dispatch(startSetToDos)
-//this dispatch runs immediately to grab information from firebase.
-//startsettodos is async thunk function
-//grabs info from firebase, inserts it back to action generator
-//action generator goes through reducer then to store.
-
 //This firebase function will speak to firebase server to check if the user is logged in.
 //In login page if you click login button, it triggers a function
 //That function runs the firebase signinpop with googleauth

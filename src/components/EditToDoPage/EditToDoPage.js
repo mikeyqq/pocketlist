@@ -28,9 +28,6 @@ const EditToDoPage = props => {
   );
 };
 
-//1. state is the redux store state
-//2. props are the info you can get from console when you select
-//the specific to do item.
 const mapStateToProps = (state, props) => {
   return { toDo: state.toDos.find(toDo => toDo.id === props.match.params.id) };
 };
