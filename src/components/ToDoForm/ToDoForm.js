@@ -2,6 +2,9 @@ import React from "react";
 import moment from "moment";
 import { SingleDatePicker } from "react-dates";
 import "react-dates/lib/css/_datepicker.css";
+import "./ToDoForm.scss";
+
+import TextField from "@material-ui/core/TextField";
 
 const now = moment();
 
@@ -72,15 +75,38 @@ export default class ToDoListForm extends React.Component {
     return (
       <div>
         {this.state.error && <p>{this.state.error}</p>}
-        <form onSubmit={this.formOnSubmitHandler}>
-          <input type="text" placeholder="Title" autoFocus value={this.state.title} onChange={this.onTitleChange} />
-          <textarea
+        <form onSubmit={this.formOnSubmitHandler} className="form-container">
+          <TextField
+            className="form-title"
             type="text"
-            placeholder="Description"
+            label="Title"
+            autoFocus
+            value={this.state.title}
+            onChange={this.onTitleChange}
+            margin="normal"
+            variant="outlined"
+          />
+
+          <TextField
+            className="form-description"
+            type="text"
+            label="Description"
             value={this.state.description}
             onChange={this.onDescriptionChange}
-          ></textarea>
-          <input type="text" placeholder="Level" value={this.state.level} onChange={this.onLevelChange} />
+            margin="normal"
+            variant="outlined"
+          />
+
+          <TextField
+            className="form-level"
+            type="text"
+            label="Priority"
+            margin="normal"
+            variant="outlined"
+            value={this.state.level}
+            onChange={this.onLevelChange}
+          />
+
           <SingleDatePicker
             date={this.state.createdAt}
             onDateChange={this.onDateChange}
@@ -89,7 +115,8 @@ export default class ToDoListForm extends React.Component {
             numberOfMonths={1}
             //isOutsideRange={() => false} -> if we want to access to the dates in the past
           />
-          <button>Submit Item</button>
+
+          <button className="form-button">Submit Item</button>
         </form>
       </div>
     );

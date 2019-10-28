@@ -1,3 +1,15 @@
 .is-active {
   font-weight: bold;
 }
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.header-logout-button {
+  padding-top: 5px;
+  font-size: 1em;
+  font-family: "Big Shoulders Text", cursive;
+}

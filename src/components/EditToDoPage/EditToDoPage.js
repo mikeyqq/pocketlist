@@ -2,6 +2,7 @@ import React from "react";
 import ToDoForm from "../ToDoForm/ToDoForm";
 import { connect } from "react-redux";
 import { startEditToDoItem, startRemoveToDoItem } from "../../actions/toDoItems";
+import "./EditToDoPage.scss";
 
 const EditToDoPage = props => {
   return (
@@ -19,6 +20,7 @@ const EditToDoPage = props => {
           props.history.push("/");
           console.log("findout the id", props.toDo.id);
         }}
+        className="edit-to-do-button"
       >
         Remove Item
       </button>

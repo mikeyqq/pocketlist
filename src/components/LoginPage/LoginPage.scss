@@ -1,0 +1,23 @@
+.googleButton {
+  margin-top: 20vh;
+  width: 200px;
+  height: 50px;
+
+  @media (min-width: "1024px") {
+    width: 290px;
+    height: 80px;
+    margin-top: 20vh;
+  }
+
+  @media (min-width: "1440px") {
+    margin-top: 20vh;
+    width: 350px;
+    height: 90px;
+  }
+
+  @media (min-width: "2560px") {
+    margin-top: 30vh;
+    width: 750px;
+    height: 170px;
+  }
+}

@@ -1,0 +1,45 @@
+.filters-container {
+  display: flex;
+  width: 100vw;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.filters-textfield {
+  margin: 10px 0px;
+  background-color: white;
+  @media (min-width: "1024px") {
+    width: 30vw;
+    left: 35vw;
+  }
+
+  @media (min-width: "1440px") {
+    width: 25vw;
+    left: 37.5vw;
+  }
+
+  @media (min-width: "2560px") {
+    width: 35vw;
+    left: 35vw;
+  }
+}
+
+.filters-select {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: white;
+  @media (min-width: "1024px") {
+    width: 30vw;
+    left: 35vw;
+  }
+
+  @media (min-width: "1440px") {
+    width: 25vw;
+    left: 37.5vw;
+  }
+
+  @media (min-width: "2560px") {
+    width: 35vw;
+    left: 35vw;
+  }
+}
